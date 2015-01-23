@@ -1,0 +1,55 @@
+{
+  "name": "coffee-script",
+  "description": "Unfancy JavaScript",
+  "keywords": [
+    "javascript",
+    "language",
+    "coffeescript",
+    "compiler"
+  ],
+  "author": {
+    "name": "Jeremy Ashkenas"
+  },
+  "version": "1.7.1",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "directories": {
+    "lib": "./lib/coffee-script"
+  },
+  "main": "./lib/coffee-script/coffee-script",
+  "bin": {
+    "coffee": "./bin/coffee",
+    "cake": "./bin/cake"
+  },
+  "scripts": {
+    "test": "node ./bin/cake test",
+    "test-harmony": "node --harmony ./bin/cake test"
+  },
+  "homepage": "http://coffeescript.org",
+  "bugs": {
+    "url": "https://github.com/jashkenas/coffee-script/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jashkenas/coffee-script.git"
+  },
+  "devDependencies": {
+    "uglify-js": "~2.2",
+    "jison": ">=0.2.0",
+    "highlight.js": "~8.0.0",
+    "underscore": "~1.5.2",
+    "docco": "0.6.x"
+  },
+  "dependencies": {
+    "mkdirp": "~0.3.5",
+    "docco": "~0.6.2"
+  },
+  "readme": "# Dev fork\n\nThis used to be a fork with generators, they are now part of the main repo, so you should just use that before the next release:\n\n\n```bash\nnpm install jashkenas/coffee-script\nnode_modules/coffee-script/bin/coffee someFile\n```\n\nThey are implicit, so just rewrite `-->` to `->` and if you don't have a `yield` inside the function, put `yield return` at the end of it.\n",
+  "readmeFilename": "README.md",
+  "_id": "coffee-script@1.7.1",
+  "_shasum": "9b57b523df26d824d87c78e53c7f029ee92943f0",
+  "_resolved": "git://github.com/xixixao/coffee-script#95ee23432bd57f03e42276a16d9e9c76ce2181d5",
+  "_from": "coffee-script@git://github.com/xixixao/coffee-script"
+}
